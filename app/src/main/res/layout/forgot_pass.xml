@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="81dp"
+            android:background="@drawable/app_symbol"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset using phone or email"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/eTEmail"
+            android:layout_width="318dp"
+            android:layout_height="44dp"
+            android:hint="Email Address"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="50dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="OR"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/eTMobileNumber"
+            android:layout_width="318dp"
+            android:layout_height="44dp"
+            android:hint="Mobile Number"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="15dp">
+        </EditText>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="Submit"
+                android:background="@drawable/btn_submit"
+                app:backgroundTint="@null"
+                android:layout_marginRight="20dp">
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_cancel"
+                app:backgroundTint="@null">
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need help? Visit our help center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp">
+        </TextView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
